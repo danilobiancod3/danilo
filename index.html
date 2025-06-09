@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Danilo Gregorio Bianco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg-color: #0A2540;
+      --accent: #4FC3F7;
+      --text-color: #ffffff;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --glass-blur: blur(10px);
+      --border: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+      padding-bottom: 3rem;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--text-color);
+      margin: 0 0.6rem;
+      font-size: 1.5rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      transform: scale(1.2);
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border);
+      border-radius: 1.2rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+    }
+
+    .card h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .skill {
+      background: var(--accent);
+      color: #0A2540;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    .contact-info a {
+      color: var(--accent);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: color 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: #ffffff;
+    }
+
+    .pop-icons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    .pop-icons i {
+      color: var(--accent);
+      transition: transform 0.3s;
+    }
+
+    .pop-icons i:hover {
+      transform: scale(1.2);
+    }
+
+    .download-btn {
+      margin-top: 1.5rem;
+      display: inline-block;
+      background: var(--accent);
+      color: #0A2540;
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #82d9fb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #aaa;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .skills {
+        justify-content: center;
+      }
+
+      .contact-info {
+        font-size: 0.95rem;
+      }
+
+      .download-btn {
+        padding: 0.6rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Danilo Gregorio Bianco</h1>
+    <p>Desenvolvedor • Técnico em TI • Mecânico</p>
+    <nav>
+      <a href="https://www.linkedin.com/seuperfil" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
+      <a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" title="GitHub"></i></a>
+      <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" title="Instagram"></i></a>
+      <a href="https://facebook.com/seuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook" title="Facebook"></i></a>
+      <a href="https://x.com/seuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter" title="X"></i></a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>🧠 Habilidades Técnicas</h2>
+      <div class="skills">
+        <div class="skill">Flutter</div>
+        <div class="skill">C#</div>
+        <div class="skill">HTML</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SQLite</div>
+        <div class="skill">infraestrutura de redes</div>
+        <div class="skill">Manutenção de PCs</div>
+        <div class="skill">Formatação de Micros</div>
+        <div class="skill">Manutenção de Motocicleta</div>
+        <div class="skill">mecanica</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💻 Sobre Mim</h2>
+      <p>Sempre fui curioso por tecnologia, especialmente na área mobile e em soluções que facilitam o dia a dia. Tenho experiência com Flutter, C#, HTML e JavaScript, além de atuar como técnico em informática, prestando manutenção e suporte em computadores. Gosto de aprender, experimentar novas ideias e encontrar formas mais eficientes de fazer as coisas. Fora do trabalho, sou fã de carros, motos e tudo que envolve inovação e tecnologia.</p>
+    </div>
+
+    <div class="card">
+      <h2>🎓 Formação</h2>
+      <ul>
+        <li>Técnico em Desenvolvimento de Sistemas - [Etec]</li>
+        <li>Técnico em Finanças - [Senac]</li>
+        <li>Auxiliar Financeiro - [Senac]</li>
+      </ul>
+      <br>
+      <h2>📚 Cursos Complementares</h2>
+      <ul>
+        <li>Curso C# Essencial (.NET 7.0 a 9.0) - [Udemy]</li>
+        <li>Manutenção de Celulares e Tablets - [Cebrac]</li>
+        <li>Curso de Mecânica de Motocicleta - [Tirso Cursos e Treinamentos]</li>
+        <li>Programa de Aprendizagem - [Senac]</li>
+      </ul>
+
+      <a href="curriculo/CurriculoDaniloGregorioBianco.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-download"></i> Ver Currículo em PDF
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>📁 Projetos Pessoais</h2>
+      <ul>
+        <li><strong>Stockfy</strong> Sistema de Vendas em Flutter: App com controle de clientes, estoque e gráficos.</li>
+        <li><strong>D3 limpeza e montagem de micros</strong> limpeza, montagem e upgrade de computadores.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📬 Contato Profissional</h2>
+      <div class="contact-info">
+        <a href="https://www.linkedin.com/in/danilo-gregorio-bianco/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> linkedin.com/in/danilo-gregorio-bianco</a>
+        <a href="https://www.instagram.com/danilogbianco/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> @danilogbianco</a>
+        <a href="https://github.com/danilobiancod3" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> github.com/danilobiancod3</a>
+        <a href="mailto:seuemail@email.com"><i class="fas fa-envelope"></i> seuemail@email.com</a>
+        <a href="tel:+550000000000"><i class="fas fa-phone"></i> (00) 00000-0000</a>
+      </div>
+    </div>
+
+    <!--
+    <div class="card">
+      <h2>🎮🚗 Cultura Pop & Interesses</h2>
+      <p>Além da tecnologia, sou fã de videogames, filmes de ficção científica, cultura geek, carros esportivos e trilhas sonoras épicas. Tudo isso inspira minha criatividade e meus projetos.</p>
+      <div class="pop-icons">
+        <i class="fas fa-gamepad" title="Games"></i>
+        <i class="fas fa-car" title="Carros"></i>
+        <i class="fas fa-film" title="Filmes"></i>
+        <i class="fas fa-robot" title="Tecnologia"></i>
+        <i class="fas fa-headphones" title="Música"></i>
+      </div>
+    </div>-->
+
+  </div>
+
+  <footer>
+    2025 - Desenvolvido por Danilo Gregorio Bianco.
+  </footer>
+
+</body>
+</html>
