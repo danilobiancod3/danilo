@@ -183,13 +183,26 @@
         padding: 0.6rem 1rem;
       }
     }
+
+      .card ul li a {
+    color: inherit;       /* mantém a cor do texto do li */
+    text-decoration: none; /* remove sublinhado */
+    cursor: pointer;       /* mantém o cursor de link */
+  }
+
+  /* Se quiser que o link mude a cor só quando passar o mouse, pode fazer: */
+  .card ul li a:hover {
+    color: #007BFF;  /* ou qualquer cor que desejar */
+    text-decoration: underline;
+  }
+
   </style>
 </head>
 <body>
 
   <header>
     <h1>Danilo Gregorio Bianco</h1>
-    <p>Desenvolvedor • Técnico em TI • Mecânico</p>
+    <p>Desenvolvedor • Técnico em TI • Manutenção</p>
     <nav>
       <a href="https://www.linkedin.com/seuperfil" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
       <a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" title="GitHub"></i></a>
@@ -206,13 +219,16 @@
       <div class="skills">
         <div class="skill">Flutter</div>
         <div class="skill">C#</div>
+        <div class="skill">SQL</div>
         <div class="skill">HTML</div>
         <div class="skill">JavaScript</div>
         <div class="skill">SQLite</div>
         <div class="skill">infraestrutura de redes</div>
         <div class="skill">Manutenção de PCs</div>
         <div class="skill">Formatação de Micros</div>
-        <div class="skill">Manutenção de Motocicleta</div>
+        <div class="skill">Manutenção</div>
+        <div class="skill">Eletrica</div>
+        <div class="skill">Eletronica</div>
         <div class="skill">mecanica</div>
       </div>
     </div>
@@ -246,10 +262,15 @@
     <div class="card">
       <h2>📁 Projetos Pessoais</h2>
       <ul>
-        <li><strong>Stockfy</strong> Sistema de Vendas em Flutter: App com controle de clientes, estoque e gráficos.</li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1P_hVnIg8BAPc41-iogvq8DQjq3jkIMQI?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <strong>Stockfy</strong> Sistema de Vendas em Flutter: App com controle de clientes, estoque e gráficos.
+          </a>
+        </li>
         <li><strong>D3 limpeza e montagem de micros</strong> limpeza, montagem e upgrade de computadores.</li>
       </ul>
     </div>
+
 
     <div class="card">
       <h2>📬 Contato Profissional</h2>
@@ -257,8 +278,8 @@
         <a href="https://www.linkedin.com/in/danilo-gregorio-bianco/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> linkedin.com/in/danilo-gregorio-bianco</a>
         <a href="https://www.instagram.com/danilogbianco/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> @danilogbianco</a>
         <a href="https://github.com/danilobiancod3" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> github.com/danilobiancod3</a>
-        <a href="mailto:seuemail@email.com"><i class="fas fa-envelope"></i> seuemail@email.com</a>
-        <a href="tel:+550000000000"><i class="fas fa-phone"></i> (00) 00000-0000</a>
+        <a href="mailto:danilogregoriob@gmail.com"><i class="fas fa-envelope"></i> danilogregoriob@gmail.com</a>
+        <a href="https://wa.me/5514996884874" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> (14) 99688-4874</a>
       </div>
     </div>
 
