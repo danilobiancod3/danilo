@@ -6,6 +6,7 @@
   <title>Danilo Gregorio Bianco</title>
   <link rel="icon" href="images/logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     :root {
@@ -16,13 +17,11 @@
       --glass-blur: blur(10px);
       --border: rgba(255, 255, 255, 0.1);
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Inter', sans-serif;
       background: var(--bg-color);
@@ -30,46 +29,38 @@
       scroll-behavior: smooth;
       padding-bottom: 3rem;
     }
-
     header {
       padding: 2rem 1rem;
       text-align: center;
     }
-
     header h1 {
       font-family: 'Orbitron', sans-serif;
       font-size: 3rem;
       color: var(--accent);
     }
-
     header p {
       margin-top: 0.5rem;
       font-size: 1.2rem;
       color: #ccc;
     }
-
     nav {
       margin-top: 1rem;
     }
-
     nav a {
       color: var(--text-color);
       margin: 0 0.6rem;
       font-size: 1.5rem;
       transition: transform 0.3s, color 0.3s;
     }
-
     nav a:hover {
       transform: scale(1.2);
       color: var(--accent);
     }
-
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
-
     .card {
       background: var(--card-bg);
       backdrop-filter: var(--glass-blur);
@@ -80,23 +71,19 @@
       box-shadow: 0 8px 24px rgba(0,0,0,0.2);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 12px 32px rgba(0,0,0,0.4);
     }
-
     .card h2 {
       color: var(--accent);
       margin-bottom: 1rem;
     }
-
     .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
     }
-
     .skill {
       background: var(--accent);
       color: #0A2540;
@@ -104,7 +91,6 @@
       border-radius: 999px;
       font-weight: bold;
     }
-
     .contact-info {
       display: flex;
       flex-direction: column;
@@ -112,7 +98,6 @@
       margin-top: 1rem;
       font-size: 1rem;
     }
-
     .contact-info a {
       color: var(--accent);
       text-decoration: none;
@@ -121,11 +106,9 @@
       gap: 0.6rem;
       transition: color 0.3s;
     }
-
     .contact-info a:hover {
       color: #ffffff;
     }
-
     .pop-icons {
       display: flex;
       gap: 1rem;
@@ -134,16 +117,13 @@
       font-size: 2rem;
       margin-top: 1rem;
     }
-
     .pop-icons i {
       color: var(--accent);
       transition: transform 0.3s;
     }
-
     .pop-icons i:hover {
       transform: scale(1.2);
     }
-
     .download-btn {
       margin-top: 1.5rem;
       display: inline-block;
@@ -155,48 +135,58 @@
       text-decoration: none;
       transition: background 0.3s;
     }
-
     .download-btn:hover {
       background: #82d9fb;
     }
-
     footer {
       text-align: center;
       padding: 2rem 1rem;
       color: #aaa;
       border-top: 1px solid var(--border);
     }
-
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
       }
-
       .skills {
         justify-content: center;
       }
-
       .contact-info {
         font-size: 0.95rem;
       }
-
       .download-btn {
         padding: 0.6rem 1rem;
       }
     }
-
       .card ul li a {
-    color: inherit;       /* mantém a cor do texto do li */
-    text-decoration: none; /* remove sublinhado */
-    cursor: pointer;       /* mantém o cursor de link */
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
   }
-
-  /* Se quiser que o link mude a cor só quando passar o mouse, pode fazer: */
   .card ul li a:hover {
-    color: #007BFF;  /* ou qualquer cor que desejar */
+    color: #007BFF;
     text-decoration: underline;
   }
-
+  .contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  .contatos a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .contatos a i {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  .contatos a:hover {
+    color: #007BFF;
+  }
   </style>
 </head>
 <body>
@@ -204,13 +194,8 @@
   <header>
     <h1>Danilo Gregorio Bianco</h1>
     <p>Desenvolvedor • Técnico em TI • Manutenção</p>
-    <nav>
-      <a href="https://www.linkedin.com/seuperfil" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
-      <a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" title="GitHub"></i></a>
-      <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" title="Instagram"></i></a>
-      <a href="https://facebook.com/seuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook" title="Facebook"></i></a>
-      <a href="https://x.com/seuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter" title="X"></i></a>
-    </nav>
+    <br>
+    <p>jaú/SP</p>
   </header>
 
   <div class="container">
@@ -239,7 +224,20 @@
 
     <div class="card">
       <h2>💻 Sobre Mim</h2>
-      <p>Sempre fui curioso por tecnologia, especialmente na área mobile e em soluções que facilitam o dia a dia. Tenho experiência com Flutter, C#, HTML e JavaScript, além de atuar como técnico em informática, prestando manutenção e suporte em computadores. Gosto de aprender, experimentar novas ideias e encontrar formas mais eficientes de fazer as coisas. Fora do trabalho, sou fã de carros, motos e tudo que envolve inovação e tecnologia.</p>
+      <p>Gosto de buscar soluções que tornem o dia a dia mais prático e eficiente.
+        Nisso, adquiri gosto por desenvolvimento mobile, especialmente com Flutter,
+        além de conhecimentos em C#, HTML e JavaScript. Também atuo como técnico em informática,
+        prestando manutenção, montagem e limpeza em computadores.<br><br>
+
+        Além da tecnologia, desenvolvi habilidades em administração financeira,
+        como organização de controle de gastos, planejamento orçamentário e gestão de pequenos negócios.
+        Também possuo vivência prática em mecânica automotiva,
+        o que amplia minha capacidade de entender e solucionar problemas de forma lógica e técnica em diferentes áreas.<br><br>
+
+        Sou apaixonado por inovação, gosto de aprender continuamente,
+        testar novas ideias e encontrar formas mais inteligentes e eficazes de realizar tarefas.
+        Fora do ambiente profissional, sou entusiasta de carros, motos e de tudo que envolve tecnologia e engenharia.
+      </p>
     </div>
 
     <div class="card">
@@ -279,11 +277,23 @@
     <div class="card">
       <h2>📬 Contato Profissional</h2>
       <div class="contact-info">
-        <a href="https://www.linkedin.com/in/danilo-gregorio-bianco/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> linkedin.com/in/danilo-gregorio-bianco</a>
-        <a href="https://www.instagram.com/danilogbianco/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> instagram.com/@danilogbianco</a>
-        <a href="https://github.com/danilobiancod3" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> github.com/danilobiancod3</a>
-        <a href="mailto:danilogregoriob@gmail.com"><i class="fas fa-envelope"></i> danilogregoriob@gmail.com</a>
-        <a href="https://wa.me/5514996884874" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> (14) 99688-4874</a>
+        <div class="contatos">
+          <a href="https://www.linkedin.com/in/danilo-gregorio-bianco/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i> linkedin.com/in/danilo-gregorio-bianco
+          </a>
+          <a href="https://www.instagram.com/danilogbianco/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i> instagram.com/danilogbianco
+          </a>
+          <a href="https://github.com/danilobiancod3" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> github.com/danilobiancod3
+          </a>
+          <a href="mailto:danilogregoriob@gmail.com">
+            <i class="fas fa-envelope"></i> danilogregoriob@gmail.com
+          </a>
+          <a href="https://wa.me/5514996884874" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> (14) 99688-4874
+          </a>
+        </div>
       </div>
     </div>
 
