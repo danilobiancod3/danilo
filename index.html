@@ -1,320 +1,364 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Danilo Gregorio Bianco</title>
-  <link rel="icon" href="images/logo.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    :root {
-      --bg-color: #0A2540;
-      --accent: #4FC3F7;
-      --text-color: #ffffff;
-      --card-bg: rgba(255, 255, 255, 0.05);
-      --glass-blur: blur(10px);
-      --border: rgba(255, 255, 255, 0.1);
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
-      scroll-behavior: smooth;
-      padding-bottom: 3rem;
-    }
-    header {
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      color: var(--accent);
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #ccc;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: var(--text-color);
-      margin: 0 0.6rem;
-      font-size: 1.5rem;
-      transition: transform 0.3s, color 0.3s;
-    }
-    nav a:hover {
-      transform: scale(1.2);
-      color: var(--accent);
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .card {
-      background: var(--card-bg);
-      backdrop-filter: var(--glass-blur);
-      border: 1px solid var(--border);
-      border-radius: 1.2rem;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 32px rgba(0,0,0,0.4);
-    }
-    .card h2 {
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .skill {
-      background: var(--accent);
-      color: #0A2540;
-      padding: 0.5rem 1rem;
-      border-radius: 999px;
-      font-weight: bold;
-    }
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-      margin-top: 1rem;
-      font-size: 1rem;
-    }
-    .contact-info a {
-      color: var(--accent);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      transition: color 0.3s;
-    }
-    .contact-info a:hover {
-      color: #ffffff;
-    }
-    .pop-icons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      font-size: 2rem;
-      margin-top: 1rem;
-    }
-    .pop-icons i {
-      color: var(--accent);
-      transition: transform 0.3s;
-    }
-    .pop-icons i:hover {
-      transform: scale(1.2);
-    }
-    .download-btn {
-      margin-top: 1.5rem;
-      display: inline-block;
-      background: var(--accent);
-      color: #0A2540;
-      padding: 0.8rem 1.5rem;
-      border-radius: 999px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .download-btn:hover {
-      background: #82d9fb;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #aaa;
-      border-top: 1px solid var(--border);
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .skills {
-        justify-content: center;
-      }
-      .contact-info {
-        font-size: 0.95rem;
-      }
-      .download-btn {
-        padding: 0.6rem 1rem;
-      }
-    }
-      .card ul li a {
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .card ul li a:hover {
-    color: #007BFF;
-    text-decoration: underline;
-  }
-  .contatos {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  .contatos a {
-    color: #ffffff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  }
-  .contatos a i {
-    margin-right: 8px;
-    font-size: 18px;
-  }
-  .contatos a:hover {
-    color: #007BFF;
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danilo Gregório — Desenvolvedor e Técnico Multidisciplinar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <link rel="stylesheet" href="css_js/css.css">
 </head>
 <body>
-
-  <header>
-    <h1>Danilo Gregorio Bianco</h1>
-    <p>Desenvolvedor • Técnico em TI • Manutenção</p>
-    <br>
-    <p>jaú/SP</p>
-  </header>
-
-  <div class="container">
-
-    <div class="card">
-      <h2>🧠 Habilidades Técnicas</h2>
-      <div class="skills">
-        <div class="skill">Excel</div>
-        <div class="skill">Google Sheets</div>
-        <div class="skill">Office</div>
-        <div class="skill">mecanica</div>
-        <div class="skill">Manutenção</div>
-        <div class="skill">Flutter</div>
-        <div class="skill">C#</div>
-        <div class="skill">SQL</div>
-        <div class="skill">HTML</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">SQLite</div>
-        <div class="skill">infraestrutura de redes</div>
-        <div class="skill">Manutenção de PCs</div>
-        <div class="skill">Formatação de Micros</div>
-        <div class="skill">Eletrica</div>
-        <div class="skill">Eletronica</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>💻 Sobre Mim</h2>
-      <p>Gosto de buscar soluções que tornem o dia a dia mais prático e eficiente.
-        Nisso, adquiri gosto por desenvolvimento mobile, especialmente com Flutter,
-        além de conhecimentos em C#, HTML e JavaScript. Também atuo como técnico em informática,
-        prestando manutenção, montagem e limpeza em computadores.<br><br>
-
-        Além da tecnologia, desenvolvi habilidades em administração financeira,
-        como organização de controle de gastos, planejamento orçamentário e gestão de pequenos negócios.
-        Também possuo vivência prática em mecânica automotiva,
-        o que amplia minha capacidade de entender e solucionar problemas de forma lógica e técnica em diferentes áreas.<br><br>
-
-        Sou apaixonado por inovação, gosto de aprender continuamente,
-        testar novas ideias e encontrar formas mais inteligentes e eficazes de realizar tarefas.
-        Fora do ambiente profissional, sou entusiasta de carros, motos e de tudo que envolve tecnologia e engenharia.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>🎓 Formação</h2>
-      <ul>
-        <li>Técnico em Desenvolvimento de Sistemas - [Etec]</li>
-        <li>Técnico em Finanças - [Senac]</li>
-        <li>Auxiliar Financeiro - [Senac]</li>
-      </ul>
-      <br>
-      <h2>📚 Cursos Complementares</h2>
-      <ul>
-        <li>Curso C# Essencial (.NET 7.0 a 9.0) - [Udemy]</li>
-        <li>Manutenção de Celulares e Tablets - [Cebrac]</li>
-        <li>Curso de Mecânica de Motocicleta - [Tirso Cursos e Treinamentos]</li>
-        <li>Programa de Aprendizagem - [Senac]</li>
-      </ul>
-
-      <a href="curriculo/CurriculoDaniloGregorioBianco.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
-        <i class="fas fa-download"></i> Ver Currículo em PDF
-      </a>
-    </div>
-
-    <div class="card">
-      <h2>📁 Projetos Pessoais</h2>
-      <ul>
-        <li>
-          <a href="https://danilobiancod3.github.io/stockfy/" target="_blank" rel="noopener noreferrer">
-            <strong>Stockfy</strong> Sistema de Vendas em Flutter: App com controle de clientes, estoque e gráficos.
-          </a>
-        </li>
-        <li><strong>D3 limpeza e montagem de micros</strong> limpeza, montagem e upgrade de computadores.</li>
-      </ul>
-    </div>
-
-
-    <div class="card">
-      <h2>📬 Contato Profissional</h2>
-      <div class="contact-info">
-        <div class="contatos">
-          <a href="https://www.linkedin.com/in/danilo-gregorio-bianco/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i> linkedin.com/in/danilo-gregorio-bianco
-          </a>
-          <a href="https://www.instagram.com/danilogbianco/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-instagram"></i> instagram.com/danilogbianco
-          </a>
-          <a href="https://github.com/danilobiancod3" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i> github.com/danilobiancod3
-          </a>
-          <a href="mailto:danilogregoriob@gmail.com">
-            <i class="fas fa-envelope"></i> danilogregoriob@gmail.com
-          </a>
-          <a href="https://wa.me/5514996884874" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-whatsapp"></i> (14) 99688-4874
-          </a>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Danilo Gregório</div>
+            <nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="nav-list">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#certifications">Certificações</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Danilo Gregório Bianco</h1>
+                <p>Desenvolvedor • Técnico em TI • Manutenção • Mecanica • Eletronica</p>
+                <a href="curriculo/CurriculoDaniloGregorioBianco.pdf" download class="btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i data-feather="download"></i> Baixar Currículo em PDF
+                </a>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/danilo-gregorio-bianco/" target="_blank" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+                    <a href="https://github.com/danilobiancod3" target="_blank" aria-label="GitHub"><i data-feather="github"></i></a>
+                    <a href="https://www.instagram.com/danilogbianco/" target="_blank" aria-label="Instagram"><i data-feather="instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Sou Danilo Gregório, um profissional com uma paixão por tecnologia em suas diversas formas. Gosto de buscar soluções que tornem o dia a dia mais prático e eficiente. Nisso, adquiri gosto pelo <strong>desenvolvimento mobile</strong>, especialmente com <strong>Flutter</strong>, além de conhecimentos em <strong>C#, HTML e JavaScript</strong>. Também atuo como <strong>técnico em informática</strong>, realizando manutenção, montagem e limpeza de computadores.</p>
+                    <p>Além da tecnologia, desenvolvi habilidades em <strong>administração financeira</strong>, como organização de controle de gastos, planejamento orçamentário e gestão de pequenos negócios. Possuo também vivência prática em <strong>mecânica automotiva</strong>, o que amplia minha capacidade de entender e solucionar problemas de forma lógica e técnica em diferentes áreas.</p>
+                    <p>Sou apaixonado por <strong>inovação</strong>, gosto de aprender continuamente, testar novas ideias e encontrar formas mais inteligentes e eficazes de realizar tarefas. Fora do ambiente profissional, sou entusiasta de <strong>carros, motos</strong> e de tudo que envolve <strong>tecnologia e engenharia</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i data-feather="code"></i> Desenvolvimento</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Flutter (Dart) <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 80%;"></div></div></li>
+                        <li class="skill-item">HTML, CSS, JavaScript <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 75%;"></div></div></li>
+                        <li class="skill-item">SQL <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 80%;"></div></div></li>
+                        <li class="skill-item">SQLite, Firebase <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 86%;"></div></div></li>
+                        <li class="skill-item">Git & GitHub <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 90%;"></div></div></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i data-feather="briefcase"></i> Produtividade</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Microsoft Office (Excel, Word, PowerPoint)<div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 85%;"></div></div></li>
+                        <li class="skill-item">Google Workspace (Docs, Planilhas, Apresentações)<div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 88%;"></div></div></li>
+                        <li class="skill-item">Canvas<div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 70%;"></div></div></li>
+                        <li class="skill-item">VS Code e IDEs (ambiente de desenvolvimento)<div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 80%;"></div></div></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i data-feather="hard-drive"></i> Manutenção Técnica</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Diagnóstico e solução de falhas de hardware e software<div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 70%;"></div></div></li>
+                        <li class="skill-item">Limpeza preventiva (física e digital), otimização e montagem<div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 90%;"></div></div></li>
+                        <li class="skill-item">Formatação, backup e reinstalação de sistemas<div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 98%;"></div></div></li>
+                        <li class="skill-item">Instalação de drivers, programas e atualizações<div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 83%;"></div></div></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i data-feather="cpu"></i> Eletrônica e Elétrica</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Arduino (Programação/Hardware) <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 70%;"></div></div></li>
+                        <li class="skill-item">Soldagem<div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 75%;"></div></div></li>
+                        <li class="skill-item">Leitura de Esquemas <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 80%;"></div></div></li>
+                        <li class="skill-item">Multímetro e Osciloscópio <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 70%;"></div></div></li>
+                        <li class="skill-item">Montagem de Circuitos <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 83%;"></div></div></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i data-feather="tool"></i> Mecânica e Manutenção</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Manutenção Preventiva/Corretiva <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 85%;"></div></div></li>
+                        <li class="skill-item">Diagnóstico de Falhas <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 70%;"></div></div></li>
+                        <li class="skill-item">Uso de Ferramentas Manuais/Elétricas <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 90%;"></div></div></li>
+                        <li class="skill-item">Motores <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 55%;"></div></div></li>
+                        <li class="skill-item">Elétrica <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 75%;"></div></div></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i data-feather="users"></i> Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Proatividade <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 95%;"></div></div></li>
+                        <li class="skill-item">Foco em Resultado <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 90%;"></div></div></li>
+                        <li class="skill-item">Resolução de Problemas <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 92%;"></div></div></li>
+                        <li class="skill-item">Adaptabilidade <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 88%;"></div></div></li>
+                        <li class="skill-item">Trabalho em Equipe <div class="proficiency-bar"><div class="proficiency-level" style="--proficiency: 85%;"></div></div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2>Formação</h2>
+                <div class="education-item">
+                    <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                    <p>Etec - 2025</p>
+                </div>
+                <div class="education-item">
+                    <h3>Técnico em Finanças</h3>
+                    <p>Senac - 2023</p>
+                </div>
+                <div class="education-item">
+                    <h3>Auxiliar Financeiro</h3>
+                    <p>Senac - 2023</p>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        <section id="education">
+            <h2>Formação Acadêmica</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-item-dot"></div>
+                    <div class="timeline-item-content">
+                        <h3>Bacharelado em Ciência da Computação</h3>
+                        <p>Universidade Tecnológica Federal do Paraná (UTFPR)</p>
+                        <p>2018 - 2022</p>
+                        <p>Foco em desenvolvimento de software, algoritmos e estruturas de dados.</p>
+                        <p><a href="link-para-certificado-cc.pdf" target="_blank" class="cert-link">Ver Certificado <i data-feather="external-link"></i></a></p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-item-dot"></div>
+                    <div class="timeline-item-content">
+                        <h3>Curso Técnico em Eletrônica</h3>
+                        <p>Escola Técnica Estadual (ETEC)</p>
+                        <p>2015 - 2017</p>
+                        <p>Estudo aprofundado em circuitos analógicos e digitais, microcontroladores.</p>
+                        <p><a href="link-para-certificado-tec-eletronica.pdf" target="_blank" class="cert-link">Ver Certificado <i data-feather="external-link"></i></a></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experiências Profissionais</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-item-dot"></div>
+                    <div class="timeline-item-content">
+                        <h3>Desenvolvedor Front-end Pleno</h3>
+                        <p>TechSolutions Ltda. | Junho 2023 - Atualmente</p>
+                        <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript (ES6+), React, Git</p>
+                        <ul>
+                            <li>Desenvolvimento e manutenção de interfaces de usuário responsivas para aplicações web.</li>
+                            <li>Colaboração com equipe de back-end para integração de APIs REST.</li>
+                            <li>Otimização de desempenho e experiência do usuário em projetos diversos.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-item-dot"></div>
+                    <div class="timeline-item-content">
+                        <h3>Técnico de Manutenção Eletrônica</h3>
+                        <p>CircuitFix S.A. | Janeiro 2020 - Maio 2023</p>
+                        <p><strong>Habilidades:</strong> Diagnóstico de circuitos, soldagem SMD, calibração de equipamentos, firmware Arduino</p>
+                        <ul>
+                            <li>Reparo e manutenção de equipamentos eletrônicos industriais.</li>
+                            <li>Desenvolvimento de pequenos protótipos com Arduino para automação de testes.</li>
+                            <li>Leitura e interpretação de esquemas elétricos complexos.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        -->
+
+        <section id="projects">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/danilobiancod3/stockfy/main/images/logo.png" alt="Stockfy" style="width: 300px; height: auto; display: block; margin: 0 auto;">
+                    <div class="project-card-content">
+                        <h3><strong>Stockfy</strong> Sistema de Vendas (Flutter)</h3>
+                        <p>Aplicativo mobile multiplataforma com controle de clientes, estoque e gráficos, além de anotações rápidas com persistência de dados local via SQLite.</p>
+                        <div class="project-card-tech">Flutter | Dart | SQLite</div>
+                        <div class="project-card-links">
+                            <a href="https://danilobiancod3.github.io/stockfy/" target="_blank"><i data-feather="external-link"></i> Acessar página do Stockfy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://br.crucial.com/content/dam/crucial/dram-products/desktop/ddr5/images/install/crucial-ddr5-desktop-motherboard-hand-non-blue-image.psd.transform/small-jpg/img.jpg" alt="D3 limpeza e montagem de micros" style="width: 300px; height: auto; display: block; margin: 0 auto;">
+                    <div class="project-card-content">
+                        <h3>D3 limpeza e montagem de micros</h3>
+                        <p>limpeza, montagem e upgrade de computadores.</p>
+                        <div class="project-card-tech"></div>
+                        <div class="project-card-links">
+                            <a href="#contact"><i data-feather="external-link"></i> Entre em contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200?text=App+Flutter" alt="Money">
+                    <div class="project-card-content">
+                        <h3><strong>Money</strong> — Controle de Gastos</h3>
+                        <p>Aplicação para registro e organização de finanças pessoais. Permite entrada dinâmica de dados e visualização clara através de uma interface web simples e eficiente.</p>
+                        <div class="project-card-tech">HTML | CSS | JavaScript | Google Workspace</div>
+                        <div class="project-card-links">
+                            <a href="#"><i data-feather="external-link"></i> Em breve</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+    <h2>Certificações e Idiomas</h2>
+    <div class="certifications-grid">
+        <div class="certification-card">
+            <h3>Curso C# Essencial (.NET 7.0 a 9.0)</h3>
+            <p>Udemy | Concluído em 2025</p>
+            <p>Programação em C# com foco em boas práticas e fundamentos do .NET moderno.</p>
+        </div>
+        <div class="certification-card">
+            <h3>Manutenção de Celulares e Tablets</h3>
+            <p>Cebrac | Concluído em 2022</p>
+            <p>Técnicas de diagnóstico, reparo e substituição de componentes móveis.</p>
+        </div>
+        <div class="certification-card">
+            <h3>Curso de Mecânica de Motocicleta</h3>
+            <p>Tirso Cursos e Treinamentos | Concluído em 2019</p>
+            <p>Manutenção geral em motos e veiculos altomotores</p>
+        </div>
+        <div class="certification-card">
+            <h3>Programa de Aprendizagem</h3>
+            <p>Senac | Concluído em 2015</p>
+            <p>Capacitação profissional com foco em rotinas administrativas e informática.</p>
+        </div>
     </div>
+</section>
 
-    <!--
-    <div class="card">
-      <h2>🎮🚗 Cultura Pop & Interesses</h2>
-      <p>Além da tecnologia, sou fã de videogames, filmes de ficção científica, cultura geek, carros esportivos e trilhas sonoras épicas. Tudo isso inspira minha criatividade e meus projetos.</p>
-      <div class="pop-icons">
-        <i class="fas fa-gamepad" title="Games"></i>
-        <i class="fas fa-car" title="Carros"></i>
-        <i class="fas fa-film" title="Filmes"></i>
-        <i class="fas fa-robot" title="Tecnologia"></i>
-        <i class="fas fa-headphones" title="Música"></i>
-      </div>
-    </div>-->
 
-  </div>
+        <!--
+        <section id="certifications">
+            <h2>Certificações e Idiomas</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <h3>Formação Front-end</h3>
+                    <p>Alura | Concluído em 2023</p>
+                    <p>Aprofundamento em HTML, CSS, JavaScript moderno e frameworks.</p>
+                    <p><a href="link-para-certificado-alura.pdf" target="_blank" class="cert-link">Ver Certificado <i data-feather="external-link"></i></a></p>
+                </div>
+                <div class="certification-card">
+                    <h3>Curso Completo de Eletrônica</h3>
+                    <p>Udemy | Concluído em 2021</p>
+                    <p>Desde fundamentos até projetos avançados com microcontroladores.</p>
+                    <p><a href="link-para-certificado-udemy.pdf" target="_blank" class="cert-link">Ver Certificado <i data-feather="external-link"></i></a></p>
+                </div>
+                <div class="certification-card">
+                    <h3>Inglês Avançado</h3>
+                    <p>CNA | Concluído em 2019</p>
+                    <p>Fluência em leitura, escrita e conversação.</p>
+                    <p><a href="link-para-certificado-ingles.pdf" target="_blank" class="cert-link">Ver Certificado <i data-feather="external-link"></i></a></p>
+                </div>
+                <div class="certification-card">
+                    <h3>Manutenção de Motos Honda</h3>
+                    <p>SENAI | Concluído em 2017</p>
+                    <p>Técnicas de diagnóstico e reparo específicas para motos Honda.</p>
+                    <p><a href="link-para-certificado-senai.pdf" target="_blank" class="cert-link">Ver Certificado <i data-feather="external-link"></i></a></p>
+                </div>
+            </div>
+        </section>-->
 
-  <footer>
-    2025 - Desenvolvido por Danilo Gregorio Bianco.
-  </footer>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Informações de Contato</h2>
+                <div class="contact-content">
+                <div class="contact-info">
+                    <p>
+                    <i data-feather="mail"></i>
+                    <a href="mailto:danilogregoriob@gmail.com">danilogregoriob@gmail.com</a>
+                    </p>
+                    <p>
+                    <i data-feather="message-circle"></i>
+                    <a href="https://wa.me/5514996884874?text=Olá%2C+encontrei+seu+contato+através+do+seu+site+e+gostaria+de+conversar%21" target="_blank" rel="noopener noreferrer">
+                    WhatsApp: +55 (14) 99688-4874
+                    </a>
+                    </p>
+                    <p>
+                    <i data-feather="map-pin"></i>
+                    <a href="https://www.google.com/maps/place/Jaú,+SP" target="_blank" rel="noopener noreferrer">
+                        Jaú, São Paulo, Brasil
+                    </a>
+                    </p>
+                    <p>
+                    <i data-feather="linkedin"></i>
+                    <a href="https://www.linkedin.com/in/danilo-gregorio-bianco/" target="_blank" rel="noopener noreferrer">
+                        linkedin.com/in/danilo-gregorio-bianco
+                    </a>
+                    </p>
+                    <p>
+                    <i data-feather="github"></i>
+                    <a href="https://github.com/danilobiancod3" target="_blank" rel="noopener noreferrer">
+                        github.com/danilobiancod3
+                    </a>
+                    </p>
+                    <p>
+                    <i data-feather="instagram"></i>
+                    <a href="https://www.instagram.com/danilogbianco/" target="_blank" rel="noopener noreferrer">
+                        instagram.com/danilogbianco
+                    </a>
+                    </p>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#education">Formação</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <p>2025 - Desenvolvido por Danilo Gregorio Bianco.</p>
+            <p>Todo mundo tem algo a ensinar. Todo mundo tem algo a aprender.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="css_js/js.js"></script>
 </body>
 </html>

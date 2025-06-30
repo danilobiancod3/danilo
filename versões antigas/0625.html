@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Danilo Gregorio Bianco</title>
+  <link rel="icon" href="images/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg-color: #0A2540;
+      --accent: #4FC3F7;
+      --text-color: #ffffff;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --glass-blur: blur(10px);
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+      padding-bottom: 3rem;
+    }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: var(--accent);
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: var(--text-color);
+      margin: 0 0.6rem;
+      font-size: 1.5rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      transform: scale(1.2);
+      color: var(--accent);
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border);
+      border-radius: 1.2rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+    }
+    .card h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skill {
+      background: var(--accent);
+      color: #0A2540;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    .contact-info a {
+      color: var(--accent);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: color 0.3s;
+    }
+    .contact-info a:hover {
+      color: #ffffff;
+    }
+    .pop-icons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    .pop-icons i {
+      color: var(--accent);
+      transition: transform 0.3s;
+    }
+    .pop-icons i:hover {
+      transform: scale(1.2);
+    }
+    .download-btn {
+      margin-top: 1.5rem;
+      display: inline-block;
+      background: var(--accent);
+      color: #0A2540;
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #82d9fb;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #aaa;
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .skills {
+        justify-content: center;
+      }
+      .contact-info {
+        font-size: 0.95rem;
+      }
+      .download-btn {
+        padding: 0.6rem 1rem;
+      }
+    }
+      .card ul li a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .card ul li a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+  }
+  .contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  .contatos a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .contatos a i {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  .contatos a:hover {
+    color: #007BFF;
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Danilo Gregorio Bianco</h1>
+    <p>Desenvolvedor • Técnico em TI • Manutenção</p>
+    <br>
+    <p>jaú/SP</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>🧠 Habilidades Técnicas</h2>
+      <div class="skills">
+        <div class="skill">Excel</div>
+        <div class="skill">Google Sheets</div>
+        <div class="skill">Office</div>
+        <div class="skill">mecanica</div>
+        <div class="skill">Manutenção</div>
+        <div class="skill">Flutter</div>
+        <div class="skill">C#</div>
+        <div class="skill">SQL</div>
+        <div class="skill">HTML</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SQLite</div>
+        <div class="skill">infraestrutura de redes</div>
+        <div class="skill">Manutenção de PCs</div>
+        <div class="skill">Formatação de Micros</div>
+        <div class="skill">Eletrica</div>
+        <div class="skill">Eletronica</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💻 Sobre Mim</h2>
+      <p>Gosto de buscar soluções que tornem o dia a dia mais prático e eficiente.
+        Nisso, adquiri gosto por desenvolvimento mobile, especialmente com Flutter,
+        além de conhecimentos em C#, HTML e JavaScript. Também atuo como técnico em informática,
+        prestando manutenção, montagem e limpeza em computadores.<br><br>
+
+        Além da tecnologia, desenvolvi habilidades em administração financeira,
+        como organização de controle de gastos, planejamento orçamentário e gestão de pequenos negócios.
+        Também possuo vivência prática em mecânica automotiva,
+        o que amplia minha capacidade de entender e solucionar problemas de forma lógica e técnica em diferentes áreas.<br><br>
+
+        Sou apaixonado por inovação, gosto de aprender continuamente,
+        testar novas ideias e encontrar formas mais inteligentes e eficazes de realizar tarefas.
+        Fora do ambiente profissional, sou entusiasta de carros, motos e de tudo que envolve tecnologia e engenharia.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🎓 Formação</h2>
+      <ul>
+        <li>Técnico em Desenvolvimento de Sistemas - [Etec]</li>
+        <li>Técnico em Finanças - [Senac]</li>
+        <li>Auxiliar Financeiro - [Senac]</li>
+      </ul>
+      <br>
+      <h2>📚 Cursos Complementares</h2>
+      <ul>
+        <li>Curso C# Essencial (.NET 7.0 a 9.0) - [Udemy]</li>
+        <li>Manutenção de Celulares e Tablets - [Cebrac]</li>
+        <li>Curso de Mecânica de Motocicleta - [Tirso Cursos e Treinamentos]</li>
+        <li>Programa de Aprendizagem - [Senac]</li>
+      </ul>
+
+      <a href="curriculo/CurriculoDaniloGregorioBianco.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-download"></i> Ver Currículo em PDF
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>📁 Projetos Pessoais</h2>
+      <ul>
+        <li>
+          <a href="https://danilobiancod3.github.io/stockfy/" target="_blank" rel="noopener noreferrer">
+            <strong>Stockfy</strong> Sistema de Vendas em Flutter: App com controle de clientes, estoque e gráficos.
+          </a>
+        </li>
+        <li><strong>D3 limpeza e montagem de micros</strong> limpeza, montagem e upgrade de computadores.</li>
+      </ul>
+    </div>
+
+
+    <div class="card">
+      <h2>📬 Contato Profissional</h2>
+      <div class="contact-info">
+        <div class="contatos">
+          <a href="https://www.linkedin.com/in/danilo-gregorio-bianco/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i> linkedin.com/in/danilo-gregorio-bianco
+          </a>
+          <a href="https://www.instagram.com/danilogbianco/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i> instagram.com/danilogbianco
+          </a>
+          <a href="https://github.com/danilobiancod3" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> github.com/danilobiancod3
+          </a>
+          <a href="mailto:danilogregoriob@gmail.com">
+            <i class="fas fa-envelope"></i> danilogregoriob@gmail.com
+          </a>
+          <a href="https://wa.me/5514996884874" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> (14) 99688-4874
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="card">
+      <h2>🎮🚗 Cultura Pop & Interesses</h2>
+      <p>Além da tecnologia, sou fã de videogames, filmes de ficção científica, cultura geek, carros esportivos e trilhas sonoras épicas. Tudo isso inspira minha criatividade e meus projetos.</p>
+      <div class="pop-icons">
+        <i class="fas fa-gamepad" title="Games"></i>
+        <i class="fas fa-car" title="Carros"></i>
+        <i class="fas fa-film" title="Filmes"></i>
+        <i class="fas fa-robot" title="Tecnologia"></i>
+        <i class="fas fa-headphones" title="Música"></i>
+      </div>
+    </div>-->
+
+  </div>
+
+  <footer>
+    2025 - Desenvolvido por Danilo Gregorio Bianco.
+  </footer>
+
+</body>
+</html>
